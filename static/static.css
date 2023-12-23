@@ -1,0 +1,116 @@
+body {
+	background-color: rgba(113, 163, 221, 0.145);
+	padding: 20px;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.info-box {
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	margin: 0 auto;
+	font-family: 'Segoe UI Variable Display', 'Segoe UI', 'Microsoft Yahei', 'Ubuntu';
+}
+
+.info-box code {
+	font-family: 'Cascadia Code', 'Jetbrains Mono', 'Ubuntu', 'Consolas';
+}
+
+.info-box table {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	font-family: 'Microsoft Yahei', 'Cascadia Code', 'Ubuntu';
+}
+
+.info-box th,
+.info-box td {
+	border: 1px solid #000000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.info-box a {
+	transition: 0.3s;
+	color: gray;
+	text-decoration: none;
+}
+
+.info-box a:hover {
+	transition: 0.8s;
+	color: lightgray;
+	text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.info-box {
+		animation: Appear-Animation 0.3s;
+	}
+}
+
+.btn {
+	display: inline-block;
+	background-color: #3285f1;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.importantbtn {
+	background-color: orange;
+}
+
+.disabled {
+	background-color: #809ec5;
+}
+
+.btn:hover {
+	background-color: #001b46;
+}
+
+.importantbtn:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.importanttxt {
+	color: red;
+}
+
+.leftalign {
+	text-align: left;
+}
+
+::selection {
+	background-color: rgba(125,188,255,.6);
+}
+
+
+@keyframes Appear-Animation {
+	from {
+		margin-left: 50px;
+		opacity: 20%;
+	}
+	to {
+		margin-left: 0px;
+		opacity: 100%;
+	}
+}
